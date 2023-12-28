@@ -353,7 +353,7 @@ def check_info():
     headers = get_headers()
     if not os.path.exists("./static/info.json"):
         open('./static/info.json', 'w')
-    test_user_url = 'https://www.douyin.com/user/MS4wLjABAAAAEpmH344CkCw2M58T33Q8TuFpdvJsOyaZcbWxAMc6H03wOVFf1Ow4mPP94TDUS4Us'
+    test_user_url = 'https://www.douyin.com/user/MS4wLjABAAAAQkN-rTD6k9wbMhdPtIhj39c99k8aT5wUrms8JJyjtHNoVjaYDAMoSi4WpCbSQkpl'
     with open("./static/info.json", "r", encoding="utf-8") as f:
         info = f.read()
     try:

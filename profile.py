@@ -30,7 +30,7 @@ class Profile:
         print(f'开始保存用户{profile.nickname}基本信息')
         sec_uid = profile.sec_uid
         nickname = norm_str(profile.nickname)
-        path = f'./datas/{nickname}_{sec_uid}'
+        path = f'./datas/{sec_uid}'
         check_and_create_path(path)
         download_media(path, 'avatar', profile.author_avatar, 'image', '用户头像')
         save_user_detail(path, profile)

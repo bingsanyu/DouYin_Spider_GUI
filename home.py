@@ -45,7 +45,7 @@ class Home:
         profile = self.profile.save_profile_info(url)
         nickname = norm_str(profile.nickname)
         aweme_count = profile.aweme_count
-        user_path = f'./datas/{nickname}_{profile.sec_uid}'
+        user_path = f'./datas/{profile.sec_uid}'
         sec_user_id = profile.sec_uid
         max_cursor = '0'
         index = 1
@@ -113,8 +113,7 @@ class Home:
 if __name__ == '__main__':
     home = Home()
     url_list = [
-        'https://www.douyin.com/user/MS4wLjABAAAAp2OG100fRV13HqBbRnbPM_l7DU0eTOaxgL-4_l07fQo',
-        'https://www.douyin.com/user/MS4wLjABAAAAigSKToDtKeC5cuZ3YsDrHfYuvpLqVSygIZ0m0yXfUAI',
+        'https://www.douyin.com/user/MS4wLjABAAAAQkN-rTD6k9wbMhdPtIhj39c99k8aT5wUrms8JJyjtHNoVjaYDAMoSi4WpCbSQkpl',
     ]
     home.main(url_list)
 
